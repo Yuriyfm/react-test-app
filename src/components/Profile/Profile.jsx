@@ -1,13 +1,14 @@
 import React from "react";
 import styles from './Profile.module.css'
 import MyPosts from "./MyPosts/MyPosts";
+import ProfileInfo from './ProfileInfo/ProfileInfo';
+import MyPostsContainer from "./MyPosts/Post/MyPostsContainer";
 
 const Profile = (props) => {
     return <div>
-        <img src="https://bigenc.ru/media/2016/10/27/1235208547/19117.jpg"/>
-        profile path
-        <MyPosts />
+        <ProfileInfo />
+        <MyPostsContainer store={props.store} />
         </div>
 }
 
-export default Profile
+export default Profile;
